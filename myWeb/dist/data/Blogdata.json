@@ -1,0 +1,73 @@
+{
+    "BlogItemData": [
+      {
+        "Imgsrc": "/img/blogItem-1.jpg",
+        "id":"0",
+        "BigTitle":"Template: More Tag",
+        "UpdataTime":"March 15, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      },
+      {
+        "Imgsrc": "/img/blogItem-2.jpg",
+        "id":"1",
+        "BigTitle":"Hello world!",
+        "UpdataTime":"February 23, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Welcome.. This is your first post. Edit or delete it, then start blogging!"
+      },
+      {
+        "Imgsrc": "/img/blogItem-3.jpg",
+        "id":"2",
+        "BigTitle":"Markup: HTML Tags ",
+        "UpdataTime":"January 11, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      },
+      {
+        "Imgsrc": "/img/blogItem-4.jpg",
+        "id":"3",
+        "BigTitle":"Markup: Text Alignment",
+        "UpdataTime":"March 15, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      },
+      {
+        "Imgsrc": "/img/blogItem-5.jpg",
+        "id":"4",
+        "BigTitle":"Markup: Title With Special Characters",
+        "UpdataTime":"March 15, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      }, {
+        "Imgsrc": "/img/blogItem-6.jpg",
+        "id":"5",
+        "BigTitle":"Template: Featured Image (Horizontal)",
+        "UpdataTime":"March 15, 2016",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      },{
+        "Imgsrc": "/img/blogItem-7.jpg",
+        "id":"6",
+        "BigTitle":"Edge Case: Nested And Mixed Lists",
+        "UpdataTime":"March 15, 2015",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      },{
+        "Imgsrc": "/img/blogItem-99.jpg",
+        "id":"99",
+        "BigTitle":"Edge Case: Nested And Mixed Lists",
+        "UpdataTime":"March 15, 2015",
+        "article":"Aigars",
+        "tag":"The More Tag",
+        "brief":"Right after this sentence should be a “continue reading” button of some sort."
+      }
+    ]
+  }

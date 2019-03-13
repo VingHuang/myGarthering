@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Starbucks.css">
+    <script src="./demo.js"></script>
+</head>
+<body>
+<div id="nav">
+    <div class="logo">
+        <a href=""><img src="img/logo.svg" alt=""></a>
+    </div>
+
+    <ul id="list">
+        <li>门店</li>
+        <li>我的菜单</li>
+        <li>账户</li>
+    </ul>
+    <div class="pull-down">
+        <img src="img/icon-hamburger.svg" alt="" id="next">
+    </div>
+    <h2>心情惬意，来杯咖啡吧☕️</h2>
+    <div id="footer">
+        <span class="span">登入</span>
+        <span>注册</span>
+    </div>
+
+</div>
+<div id="nav-fullcover">
+
+    <div class="logo">
+        <a href=""><img src="img/logo.svg" alt=""></a>
+    </div>
+    <div class="pull-down">
+        <img src="img/x.jpg" alt="" id="prev">
+    </div>
+    <div class="list-menu2">
+
+        <ul>
+            <li>门店</li>
+            <li>星象俱乐部</li>
+            <li>菜单</li>
+        </ul>
+
+        <ul class="list-menu">
+            <li>星巴克移动应用</li>
+            <li>新礼卡</li>
+            <li>辛巴克甄选</li>
+            <li>辛巴克甄选</li>
+            <li>辛巴克甄选</li>
+            <li>辛巴克甄选</li>
+            <li>辛巴克甄选</li>
+        </ul>
+    </div>
+
+    <div class="list-menu2-enroll">
+        <span class=>登入</span>
+        <span>注册</span>
+    </div>
+
+
+</div>
+<div class="slide">
+    <div id="img-content">
+        <img src="img/slide-1.jpg" alt="" >
+        <img src="img/slide-2.jpg" alt="">
+        <img src="img/slide-3.jpg" alt="">
+        <img src="img/slide-1.jpg" alt="">
+    </div>
+</div>
+
+<div id="box-contain">
+    <div class="box-center">
+        <div id="box-conatin1"><img src="img/box-img1.jpg" alt=""></div>
+        <div id="box-conatin2"><img src="img/box-img2.jpg" alt=""></div>
+        <div id="box-conatin3"><img src="img/box-img3.jpg" alt=""></div>
+    </div>
+
+</div>
+<div id="box-contain-2">
+    <div class="box-center">
+        <div class="box-left">
+            <p class="font-box-head">星享俱乐部</p>
+            <p class="font-box-content">开启您的星享之旅，星星越多、会员等级越高、</p><p class="font-box-content">好礼越丰富。</p>
+        </div>
+        <div class="box-right"><img src="img/box-log.svg" alt=""></div>
+    </div>
+
+</div>
+<script src="./jquery-1.12.4.min.js"></script>>
+<script>
+    var oNext = document.getElementById('next');
+    var navFullover = document.getElementById('nav-fullcover');
+    var nav = document.getElementById('nav');
+    var oPrev = document.getElementById('prev');
+
+    oNext.onclick = function () {
+        nav.style.visibility = 'hidden';
+        navFullover.style.visibility = 'visible';
+        navFullover.style.opacity = '1';
+        nav.style.opacity = '0';
+    }
+    oPrev.onclick = function () {
+        nav.style.visibility = 'visible';
+        navFullover.style.visibility = 'hidden';
+        console.log('456');
+        nav.style.opacity = '1';
+        navFullover.style.opacity = '0';
+
+    }
+
+    //轮播图
+    var clientW = document.body.clientWidth;
+    var navClientw = document.getElementById('nav').clientWidth;
+        slideWith = clientW - navClientw;
+    console.log(clientW);
+    console.log(navClientw);
+    console.log(slideWith);
+        $('#img-content').css('width',function () {
+            return 4 * slideWith;
+        });
+
+        $('#img-content img').css('width',function () {
+            return 1 * slideWith;
+        })
+    var nowIndex = 1;
+    var play = function () {
+        if (nowIndex == 4) {
+            nowIndex = 1;
+            $('#img-content').css({
+                transition: 'none',
+                transform: 'translateX(0px)',
+            })
+        } else {
+            $('#img-content').css({
+                transition: 'transform .8s ease',
+                transform: 'translateX(-' + slideWith * (nowIndex++) + 'px)'
+            })
+        }
+    }
+    setInterval(play,1000);
+
+    //box:hover
+    $('#box-contain .box-center').children().on('mouseenter',function () {
+        $(this).css({transform:'translateY(-4px)',
+                    boxShadow:'0px 1px 2px 2px rgba(0, 0, 0, 0.10)'
+
+        });
+    }).on('mouseleave',function () {
+
+        $(this).css({transform:'translateY(4px)',
+            boxShadow:'0px 1px 2px 2px rgba(0, 0, 0, 0.10)'
+
+        });
+    })
+
+
+</script>
+</body>
+</html>
